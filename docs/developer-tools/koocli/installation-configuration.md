@@ -1,100 +1,100 @@
 ---
-title: Instalação e Configuração do KooCLI
+title: Installation and Configuration
 layout: default
-parent: Management and Governance
-lang: pt
-permalink: /docs/management-and-governance/cli/installation-configuration
+parent: KooCLI
+grand_parent: Developer Tools
+permalink: /docs/developer-tools/koocli/installation-configuration
 ---
 <img width="450px" height="102px" src="https://console-static.huaweicloud.com/static/authui/20210202115135/public/custom/images/logo-en.svg">
 
-# KooCLI - Interface de Linha de Comando da Huawei Cloud
+# KooCLI - Huawei Cloud Command Line Interface
 
-V1.0 – Novembro 2025
+V1.0 – November 2025
 
-| **Versão**        | **Autor**                      | **Descrição**        |
+| **Version**       | **Author**                     | **Description**      |
 | ----------------- | ------------------------------ | -------------------- |
-| V1.0 – 2025-11    | Raul Myron 50054635            | Versão Inicial       |
+| V1.0 – 2025-11    | Raul Myron 50054635            | Initial Version      |
 
-## Introdução
+## Introduction
 
-Este documento apresenta os procedimentos para instalação e configuração do KooCLI (Huawei Cloud CLI), a ferramenta de linha de comando oficial para gerenciamento de recursos na Huawei Cloud.
+This document presents the procedures for installing and configuring KooCLI (Huawei Cloud CLI), the official command-line tool for managing Huawei Cloud resources.
 
-## Instalação no Ubuntu/Linux
+## Installation on Ubuntu/Linux
 
-Consulte a [Documentação Oficial](https://support.huaweicloud.com/intl/en-us/qs-hcli/hcli_02_003_02.html) para mais detalhes.
+Refer to the [Official Documentation](https://support.huaweicloud.com/intl/en-us/qs-hcli/hcli_02_003_02.html) for more details.
 
-### Passos de Instalação
+### Installation Steps
 
 ```bash
-# Fazer download e instalar
+# Download and install
 sudo curl -sSL http://ap-southeast-3-hwcloudcli.obs.ap-southeast-3.myhuaweicloud.com/cli/latest/hcloud_install.sh -o ./hcloud_install.sh && sudo bash ./hcloud_install.sh
 
-# Verificar instalação
+# Verify installation
 hcloud version
 
-# Iniciar configuração
+# Start configuration
 hcloud configure show
 ```
 
-### Configuração
+### Configuration
 
-Durante a configuração, será solicitado:
-- **Access Key (AK)**: Sua chave de acesso
-- **Secret Key (SK)**: Sua chave secreta
-- **Region**: Região da Huawei Cloud (para Brasil: `sa-brazil-1`)
+During configuration, you will be prompted for:
+- **Access Key (AK)**: Your access key
+- **Secret Key (SK)**: Your secret key
+- **Region**: Huawei Cloud region (for Brazil: `sa-brazil-1`)
 
-### Ajustes de Timeout (Recomendado para Brasil)
+### Timeout Adjustments (Recommended for Brazil)
 
-Para melhorar a estabilidade da conexão:
+To improve connection stability:
 
 ```bash
-# Configuração recomendada
+# Recommended configuration
 hcloud configure set --connect-timeout=60 --read-timeout=120 --retry-count=3
 
-# Alternativa para conexões mais instáveis
+# Alternative for more unstable connections
 hcloud configure set --connect-timeout=90 --read-timeout=180 --retry-count=5
 ```
 
-## Instalação no Windows
+## Installation on Windows
 
 ### Download
 
-- [Documentação Oficial](https://support.huaweicloud.com/intl/en-us/qs-hcli/hcli_02_003_01.html)
-- [Download Direto (.exe)](https://ap-southeast-3-hwcloudcli.obs.ap-southeast-3.myhuaweicloud.com/cli/latest/huaweicloud-cli-windows-amd64.zip)
+- [Official Documentation](https://support.huaweicloud.com/intl/en-us/qs-hcli/hcli_02_003_01.html)
+- [Direct Download (.exe)](https://ap-southeast-3-hwcloudcli.obs.ap-southeast-3.myhuaweicloud.com/cli/latest/huaweicloud-cli-windows-amd64.zip)
 
-### Configuração de Variáveis de Ambiente
+### Environment Variables Configuration
 
-1. Extraia o arquivo para um diretório (ex: `C:\huaweicloud-cli`)
-2. Adicione o caminho às variáveis de ambiente:
-   - Vá em **Configurações do Sistema** → **Variáveis de Ambiente**
-   - Adicione o caminho no **Path** do usuário
+1. Extract the file to a directory (e.g., `C:\huaweicloud-cli`)
+2. Add the path to environment variables:
+   - Go to **System Settings** → **Environment Variables**
+   - Add the path to the user's **Path** variable
 
-### Verificação e Configuração
+### Verification and Configuration
 
 ```bash
-# Verificar instalação
+# Verify installation
 hcloud version
 
-# Iniciar configuração
+# Start configuration
 hcloud configure show
 
-# Configurar timeouts
+# Configure timeouts
 hcloud configure set --connect-timeout=60 --read-timeout=120 --retry-count=3
 ```
 
-## Verificação da Instalação
+## Installation Verification
 
 ```bash
-# Download de metadados dos serviços
+# Download service metadata
 hcloud meta download
 
-# Listar todos os serviços disponíveis
+# List all available services
 hcloud
 ```
 
-## Serviços Disponíveis
+## Available Services
 
-O KooCLI oferece suporte a mais de 100 serviços da Huawei Cloud, incluindo:
+KooCLI supports over 100 Huawei Cloud services, including:
 
 |           |                  |                     |                     |              |
 |-----------|------------------|---------------------|---------------------|--------------|
@@ -122,14 +122,14 @@ O KooCLI oferece suporte a mais de 100 serviços da Huawei Cloud, incluindo:
 |    CSE    |        DNS       |  IdentityCenterOIDC |         RGC         |              |
 |    CSMS   |        DRS       |  IdentityCenterSCIM |         RMS         |              |
 
-Para lista completa de serviços, execute `hcloud` após a instalação.
+For a complete list of services, run `hcloud` after installation.
 
-## Próximos Passos
+## Next Steps
 
-- Explore a documentação de cada serviço: `hcloud [service] help`
-- Configure perfis múltiplos para diferentes contas/regiões
-- Integre com scripts de automação
+- Explore documentation for each service: `hcloud [service] help`
+- Configure multiple profiles for different accounts/regions
+- Integrate with automation scripts
 
-## Referências
+## References
 
-- [Documentação Oficial KooCLI](https://support.huaweicloud.com/intl/en-us/qs-hcli/hcli_02_003.html)
+- [Official KooCLI Documentation](https://support.huaweicloud.com/intl/en-us/qs-hcli/hcli_02_003.html)
