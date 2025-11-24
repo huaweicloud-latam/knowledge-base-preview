@@ -1,6 +1,7 @@
 ---
 title: KooCLI
 lang: pt
+parent: Ferramentas de Desenvolvimento
 permalink: /docs/developer-tools/koocli
 ---
 

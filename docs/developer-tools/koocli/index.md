@@ -1,5 +1,6 @@
 ---
 title: KooCLI
+parent: Developer Tools
 permalink: /docs/developer-tools/koocli
 ---
 
