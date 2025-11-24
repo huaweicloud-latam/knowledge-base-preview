@@ -68,7 +68,7 @@ flowchart TD
 
 Access the official Huawei Cloud website: [https://www.huaweicloud.com/intl/en-us/](https://www.huaweicloud.com/intl/en-us/)
 
-{% include image.html post=page.path file="step1-huawei-cloud-home-page.png" alt="Huawei Cloud Home Page" %}
+{% include image.html post=page.path file="step1-huawei-cloud-home-page.jpg" alt="Huawei Cloud Home Page" %}
 
 Click the **Sign Up** button in the top-right corner to open the registration
 portal.
