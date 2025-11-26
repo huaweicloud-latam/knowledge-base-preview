@@ -94,6 +94,7 @@ PLATFORMS
 DEPENDENCIES
   jekyll (~> 4.4.1)
   jekyll-polyglot (~> 1.11.0)
+  jekyll-sass-converter (~> 3.1.0)
   just-the-docs (= 0.10.1)
 
 BUNDLED WITH
