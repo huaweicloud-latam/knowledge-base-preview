@@ -11,7 +11,7 @@ defaults:
     values:
       layout: "default"
 
-logo: "/assets/images/huawei-cloud-2025.png"
+logo: "/assets/images/huawei-cloud-2025.svg"
 favicon_ico: "/assets/images/huawei-logo.png"
 
 color_scheme: huawei
