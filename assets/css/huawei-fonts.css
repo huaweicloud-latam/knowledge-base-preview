@@ -1,0 +1,98 @@
+/*
+ * Extracted from <https://portal.hc-cdn.com/cnpm-global-resources/1.2.4/css/hk/portal-global.css>
+ * Included on <https://www.huaweicloud.com/intl/en-us/>
+ * Accessed at 2025-11-26
+ */
+
+@font-face {
+  font-family: 'Helvetica';
+  font-weight: 100;
+  src: url('https://res-static1.huaweicloud.com/program/common/hk/en-us/static/en_js/portalGlobal/fonts/Helvetica/HelveticaNeue_Thin.eot');
+  src: url('https://res-static1.huaweicloud.com/program/common/hk/en-us/static/en_js/portalGlobal/fonts/Helvetica/HelveticaNeue_Thin.eot?#iefix')
+      format('embedded-opentype'),
+    url('https://res-static1.huaweicloud.com/program/common/hk/en-us/static/en_js/portalGlobal/fonts/Helvetica/HelveticaNeue_Thin.woff') format('woff'),
+    url('https://res-static1.huaweicloud.com/program/common/hk/en-us/static/en_js/portalGlobal/fonts/Helvetica/HelveticaNeue_Thin.ttf') format('truetype'),
+    url('https://res-static1.huaweicloud.com/program/common/hk/en-us/static/en_js/portalGlobal/fonts/Helvetica/HelveticaNeue_Thin.svg#Helvetica') format('svg');
+}
+@font-face {
+  font-family: 'Helvetica';
+  font-weight: 400;
+  src: url('https://res-static1.huaweicloud.com/program/common/hk/en-us/static/en_js/portalGlobal/fonts/Helvetica/HelveticaNeue_Regular.eot');
+  src: url('https://res-static1.huaweicloud.com/program/common/hk/en-us/static/en_js/portalGlobal/fonts/Helvetica/HelveticaNeue_Regular.eot?#iefix')
+      format('embedded-opentype'),
+    url('https://res-static1.huaweicloud.com/program/common/hk/en-us/static/en_js/portalGlobal/fonts/Helvetica/HelveticaNeue_Regular.woff') format('woff'),
+    url('https://res-static1.huaweicloud.com/program/common/hk/en-us/static/en_js/portalGlobal/fonts/Helvetica/HelveticaNeue_Regular.ttf') format('truetype'),
+    url('https://res-static1.huaweicloud.com/program/common/hk/en-us/static/en_js/portalGlobal/fonts/Helvetica/HelveticaNeue_Regular.svg#Helvetica')
+      format('svg');
+}
+@font-face {
+  font-family: 'frutiger';
+  font-weight: 100;
+  src: url('https://res-static1.huaweicloud.com/program/common/hk/en-us/static/en_js/portalGlobal/fonts/frutiger/frutigernext-lt-medium.eot');
+  src: url('https://res-static1.huaweicloud.com/program/common/hk/en-us/static/en_js/portalGlobal/fonts/frutiger/frutigernext-lt-medium.eot?#iefix')
+      format('embedded-opentype'),
+    url('https://res-static1.huaweicloud.com/program/common/hk/en-us/static/en_js/portalGlobal/fonts/frutiger/frutigernext-lt-medium.woff') format('woff'),
+    url('https://res-static1.huaweicloud.com/program/common/hk/en-us/static/en_js/portalGlobal/fonts/frutiger/frutigernext-lt-medium.ttf') format('truetype'),
+    url('https://res-static1.huaweicloud.com/program/common/hk/en-us/static/en_js/portalGlobal/fonts/frutiger/frutigernext-lt-medium.svg#Helvetica')
+      format('svg');
+}
+@font-face {
+  font-family: 'frutiger';
+  font-weight: 400;
+  src: url('https://res-static1.huaweicloud.com/program/common/hk/en-us/static/en_js/portalGlobal/fonts/frutiger/LT_54361.eot');
+  src: url('https://res-static1.huaweicloud.com/program/common/hk/en-us/static/en_js/portalGlobal/fonts/frutiger/LT_54361.eot?#iefix')
+      format('embedded-opentype'),
+    url('https://res-static1.huaweicloud.com/program/common/hk/en-us/static/en_js/portalGlobal/fonts/frutiger/LT_54361.woff') format('woff'),
+    url('https://res-static1.huaweicloud.com/program/common/hk/en-us/static/en_js/portalGlobal/fonts/frutiger/LT_54361.ttf') format('truetype'),
+    url('https://res-static1.huaweicloud.com/program/common/hk/en-us/static/en_js/portalGlobal/fonts/frutiger/LT_54361.svg#Helvetica') format('svg');
+}
+@font-face {
+  font-family: 'HuaweiSans';
+  font-weight: 400;
+  src: url('https://res-static1.huaweicloud.com/program/common/hk/en-us/static/en_js/portalGlobal/fonts/huawesans/HuaweiSans-Regular.eot');
+  src: url('https://res-static1.huaweicloud.com/program/common/hk/en-us/static/en_js/portalGlobal/fonts/huawesans/HuaweiSans-Regular.eot?#iefix20180113')
+      format('embedded-opentype'),
+    url('https://res-static1.huaweicloud.com/program/common/hk/en-us/static/en_js/portalGlobal/fonts/huawesans/HuaweiSans-Regular.woff2?20180113')
+      format('woff2'),
+    url('https://res-static1.huaweicloud.com/program/common/hk/en-us/static/en_js/portalGlobal/fonts/huawesans/HuaweiSans-Regular.woff?20180113') format('woff'),
+    url('https://res-static1.huaweicloud.com/program/common/hk/en-us/static/en_js/portalGlobal/fonts/huawesans/HuaweiSans-Regular.ttf?20180113')
+      format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'HuaweiSans-Light';
+  src: url('https://res-static1.huaweicloud.com/program/common/hk/en-us/static/en_js/portalGlobal/fonts/huawesans/HuaweiSans-Light.eot');
+  src: url('https://res-static1.huaweicloud.com/program/common/hk/en-us/static/en_js/portalGlobal/fonts/huawesans/HuaweiSans-Light.eot?#iefix20180113')
+      format('embedded-opentype'),
+    url('https://res-static1.huaweicloud.com/program/common/hk/en-us/static/en_js/portalGlobal/fonts/huawesans/HuaweiSans-Light.woff2?20180113') format('woff2'),
+    url('https://res-static1.huaweicloud.com/program/common/hk/en-us/static/en_js/portalGlobal/fonts/huawesans/HuaweiSans-Light.woff?20180113') format('woff'),
+    url('https://res-static1.huaweicloud.com/program/common/hk/en-us/static/en_js/portalGlobal/fonts/huawesans/HuaweiSans-Light.ttf?20180113')
+      format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'HuaweiSans-Bold';
+  src: url('https://res-static1.huaweicloud.com/program/common/hk/en-us/static/en_js/portalGlobal/fonts/huawesans/HuaweiSans-Bold.eot');
+  src: url('https://res-static1.huaweicloud.com/program/common/hk/en-us/static/en_js/portalGlobal/fonts/huawesans/HuaweiSans-Bold.eot?#iefix20180113')
+      format('embedded-opentype'),
+    url('https://res-static1.huaweicloud.com/program/common/hk/en-us/static/en_js/portalGlobal/fonts/huawesans/HuaweiSans-Bold.woff2?20180113') format('woff2'),
+    url('https://res-static1.huaweicloud.com/program/common/hk/en-us/static/en_js/portalGlobal/fonts/huawesans/HuaweiSans-Bold.woff?20180113') format('woff'),
+    url('https://res-static1.huaweicloud.com/program/common/hk/en-us/static/en_js/portalGlobal/fonts/huawesans/HuaweiSans-Bold.ttf?20180113') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'HuaweiSans-Regular';
+  src: url('https://res-static1.huaweicloud.com/program/common/hk/en-us/static/en_js/portalGlobal/fonts/huawesans/HuaweiSans-Regular.eot');
+  src: url('https://res-static1.huaweicloud.com/program/common/hk/en-us/static/en_js/portalGlobal/fonts/huawesans/HuaweiSans-Regular.eot?#iefix20180113')
+      format('embedded-opentype'),
+    url('https://res-static1.huaweicloud.com/program/common/hk/en-us/static/en_js/portalGlobal/fonts/huawesans/HuaweiSans-Regular.woff2?20180113')
+      format('woff2'),
+    url('https://res-static1.huaweicloud.com/program/common/hk/en-us/static/en_js/portalGlobal/fonts/huawesans/HuaweiSans-Regular.woff?20180113') format('woff'),
+    url('https://res-static1.huaweicloud.com/program/common/hk/en-us/static/en_js/portalGlobal/fonts/huawesans/HuaweiSans-Regular.ttf?20180113')
+      format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
