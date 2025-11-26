@@ -26,3 +26,7 @@ parallel_localization: true
 
 aux_links:
   Contribute: https://github.com/REPO-PLACEHOLDER
+
+sass:
+  quiet_deps: true # https://github.com/just-the-docs/just-the-docs/issues/1541
+  silence_deprecations: ['import'] # https://github.com/just-the-docs/just-the-docs/issues/1607
