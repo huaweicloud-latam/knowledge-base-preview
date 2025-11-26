@@ -6,7 +6,7 @@ permalink: /
 ---
 
 <!-- markdownlint-disable-next-line no-inline-html -->
-<a href="https://www.huaweicloud.com/intl/en-us/"><img width="450px" height="102px" src="https://console-static.huaweicloud.com/static/authui/20210202115135/public/custom/images/logo-en.svg"></a>
+<a href="https://www.huaweicloud.com/intl/en-us/"><img width="450px" height="102px" src="{{ site.url }}/assets/images/huawei-cloud-2025.svg"></a>
 
 This website is a collaborative, public knowledge base for Huawei Cloud services.
 In this website you can find technical guides for specific scenarios. Use the
