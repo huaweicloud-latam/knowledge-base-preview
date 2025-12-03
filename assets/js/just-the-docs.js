@@ -95,10 +95,9 @@ function disableHeadStyleSheets() {
 function initSearch() {
   var path = window.location.pathname
   var endpoint = 'REPO-NAME-PLACEHOLDER';
-  var isCNAME = endpoint;
 
   // If CNAME is used, the URL is one '/' shorter
-  if(isCNAME == '') {
+  if(endpoint == '') {
     var index = 1;
   }
 
