@@ -99,7 +99,7 @@ function initSearch() {
   for (var i in langPrefixArray) {
     if(langPrefixArray[i] == 'pt') {
       var endpoint = endpoint + '/pt';
-      var langPrefix = "pt';
+      var langPrefix = 'pt';
     }
   }
   endpoint += '/assets/js/search-data.json'
