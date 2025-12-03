@@ -48,9 +48,9 @@ jobs:
           if [ -z "${CUSTOM_PAGES_DOMAIN}" ]; then
             # Removes the repo owner from the hyperlink
             RAW="${GITHUB_REPOSITORY}"
-            EXTRACTED=$(echo "$RAW" | awk -F"/" '{print $2}')
-            PAGES_URL="${GITHUB_REPOSITORY_OWNER}.github.io/$EXTRACTED"
-            REPO_NAME_PLACEHOLDER="${GITHUB_REPOSITORY}"
+            REPO_NAME_ONLY=$(echo "$RAW" | awk -F"/" '{print $2}')
+            PAGES_URL="${GITHUB_REPOSITORY_OWNER}.github.io/$REPO_NAME_ONLY"
+            REPO_NAME_PLACEHOLDER="$REPO_NAME_ONLY"
           else
             PAGES_URL="${CUSTOM_PAGES_DOMAIN}"
             REPO_NAME_PLACEHOLDER=""
