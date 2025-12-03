@@ -95,7 +95,15 @@ function disableHeadStyleSheets() {
 function initSearch() {
   var path = window.location.pathname
   var langPrefix = path.split('/')[2];
-  var endpoint = langPrefix === 'pt' ? '/REPO-NAME-PLACEHOLDER/pt/assets/js/search-data.json' : '/REPO-NAME-PLACEHOLDER/assets/js/search-data.json';
+  var endpoint = langPrefix === 'pt' ? 'REPO-NAME-PLACEHOLDER/pt' : 'REPO-NAME-PLACEHOLDER';
+  endpoint += '/assets/js/search-data.json'
+
+  if (!endpoint.startsWith('/')) {
+    // happens when this is not an empty string: "REPO-NAME-PLACEHOLDER"
+    // (the line above is the result of GitHub Actions pipeline,
+    // check the pages.yml file to see what happens during the build process)
+    endpoint = '/' + endpoint;
+  }
 
   var request = new XMLHttpRequest();
   request.open('GET', endpoint, true);

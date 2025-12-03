@@ -2,7 +2,11 @@ title: Huawei Cloud Knowledge Base
 description: This blog is a knowledge base created in order to enable faster documentation sharing related to Huawei Cloud.
 theme: just-the-docs
 
-url: https://REPO-OWNER-PLACEHOLDER.github.io/REPO-NAME-PLACEHOLDER
+# PAGES-URL-PLACEHOLDER is equal to CUSTOM_PAGES_DOMAIN environment variable,
+# if this environment variable is set, otherwise it's equal to
+# "${GITHUB_REPOSITORY_OWNER}.github.io/${GITHUB_REPOSITORY}"
+# which is the default URL for GitHub Pages when they are published
+url: https://PAGES-URL-PLACEHOLDER
 
 defaults:
   - scope:
