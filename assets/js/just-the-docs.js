@@ -97,13 +97,7 @@ function initSearch() {
   var endpoint = 'REPO-NAME-PLACEHOLDER';
 
   // If CNAME is used, the URL is one '/' shorter
-  if(endpoint === '') {
-    var urlIndex = 1;
-  }
-
-  else {
-    var urlIndex = 2;
-  }
+  var urlIndex = endpoint === '' ? 1 : 2;
 
   var langPrefix = path.split('/')[urlIndex];
   endpoint = langPrefix === 'pt' ? 'REPO-NAME-PLACEHOLDER/pt/assets/js/search-data.json' : 'REPO-NAME-PLACEHOLDER/assets/js/search-data.json';
