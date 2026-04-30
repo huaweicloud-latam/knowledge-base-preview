@@ -2,6 +2,7 @@
 title: Criando uma IAM Agency delegando acesso a um serviço da Huawei Cloud
 layout: default
 parent: Terraform
+lang: pt
 permalink: /docs/developer-tools/terraform/creating-iam-agency-delegated-to-cloud-service
 ---
 
